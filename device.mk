@@ -16,7 +16,7 @@
 $(call inherit-product-if-exists, vendor/wileyfox/porridge/porridge-vendor.mk)
 
 # Charger and USB
-ADDITIONAL_DEFAULT_PROPERTIES += \
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.usb.vid=2970
 
 # Overlay
