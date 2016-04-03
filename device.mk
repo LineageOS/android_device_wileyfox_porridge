@@ -29,11 +29,16 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
 
+# Media
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
+    $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
+
 # Thermal
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/config/thermal.conf:system/etc/.tp/thermal.conf \
-    $(LOCAL_PATH)/config/thermal.off.conf:system/etc/.tp/thermal.off.conf \
-    $(LOCAL_PATH)/config/ht120.mtc:system/etc/.tp/.htc120.mtc
+    $(LOCAL_PATH)/configs/thermal.conf:system/etc/.tp/thermal.conf \
+    $(LOCAL_PATH)/configs/thermal.off.conf:system/etc/.tp/thermal.off.conf \
+    $(LOCAL_PATH)/configs/ht120.mtc:system/etc/.tp/.htc120.mtc
 
 # System Properties
 #PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
