@@ -1,0 +1,6 @@
+on boot
+
+    # doubletap to wake
+    chown system radio /sys/devices/soc/11008000.i2c/i2c-1/1-0020/input/input6/wake_gesture
+    chmod 664 /sys/devices/soc/11008000.i2c/i2c-1/1-0020/input/input6/wake_gesture
+
