@@ -2,13 +2,9 @@
 bin/6620_launcher
 bin/ccci_fsd
 bin/ccci_mdinit
-bin/emdlogger1
 bin/gsm0710muxd
 bin/gsm0710muxdmd2
 bin/md_ctrl
-bin/mdlogger
-bin/mobile_log_d
-bin/mtkradiooptions
 bin/mtkrild
 bin/mtkrildmd2
 bin/muxreport
@@ -191,6 +187,13 @@ etc/audio_param/AudioParamOptions.xml
 # Misc
 lib{,64}/hw/lights.mt6735.so
 lib{,64}/hw/memtrack.mt6735.so
+
+# MTKLogger
+-app/MTKLogger/MTKLogger.apk
+bin/emdlogger1
+bin/mdlogger
+bin/mobile_log_d
+bin/netdiag
 
 # Wifi
 etc/firmware/ROMv2_lm_patch_1_0_hdr.bin
