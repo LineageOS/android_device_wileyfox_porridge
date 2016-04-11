@@ -3,10 +3,8 @@ bin/6620_launcher
 bin/ccci_fsd
 bin/ccci_mdinit
 bin/gsm0710muxd
-bin/gsm0710muxdmd2
 bin/md_ctrl
 bin/mtkrild
-bin/mtkrildmd2
 bin/muxreport
 bin/netdiag
 bin/terservice
@@ -15,10 +13,8 @@ lib{,64}/libccci_util.so
 lib{,64}/libmdloggerrecycle.so
 lib/libmemoryDumpEncoder.so
 lib{,64}/libmrdump.so
-lib{,64}/librilmtkmd2.so
 lib{,64}/librilmtk.so
 lib64/libterservice.so
-lib{,64}/mtk-rilmd2.so
 lib{,64}/mtk-ril.so
 etc/ecc_list.xml
 
@@ -73,12 +69,13 @@ lib{,64}/libgralloc_extra.so
 lib{,64}/libgui_ext.so
 lib{,64}/libgpu_aux.so
 lib{,64}/libion_mtk.so
+lib64/libpq_cust.so
 lib{,64}/libpq_prot.so
 lib{,64}/libpqservice.so
 lib{,64}/libui_ext.so
 lib{,64}/hw/gralloc.mt6735.so
 lib{,64}/hw/hwcomposer.mt6735.so
-lib/egl/libGLES_mali.so
+lib{,64}/egl/libGLES_mali.so
 
 # WIFI / BT / FM
 bin/wmt_loader
@@ -100,7 +97,7 @@ etc/firmware/mt6627/mt6627_fm_v5_patch.bin
 etc/fmr/mt6627_fm_cust.cfg
 
 # Camera
-lib/lib3a_sample.so
+lib{,64}/lib3a_sample.so
 lib{,64}/lib3a.so
 lib{,64}/libcam1_utils.so
 lib{,64}/libcam3_app.so
@@ -141,6 +138,7 @@ lib{,64}/libfile_op.so
 lib{,64}/libimageio_plat_drv.so
 lib{,64}/libimageio.so
 lib/libJpgDecPipe.so
+lib/libSwJpgCodec.so
 lib{,64}/libJpgEncPipe.so
 lib/libmhalImageCodec.so
 lib{,64}/libmtkcamera_client.so
@@ -160,7 +158,7 @@ lib{,64}/libdrmmtkwhitelist.so
 lib/libHEVCdec_sa.ca7.android.so
 lib{,64}/libm4u.so
 lib{,64}/libmal.so
-lib/libmatv_cust.so
+lib{,64}/libmatv_cust.so
 lib{,64}/libmdfx.so
 lib{,64}/libmmprofile.so
 lib{,64}/libmmsdkservice.feature.so
@@ -181,7 +179,7 @@ lib{,64}/libvcodec_oal.so
 lib{,64}/libvcodec_utility.so
 lib/libvp8dec_sa.ca7.so
 lib/libvp9dec_sa.ca7.so
-lib/hw/audio.primary.mt6735.so
+lib{,64}/hw/audio.primary.mt6735.so
 etc/audio_param/AudioParamOptions.xml
 
 # Misc
@@ -200,3 +198,10 @@ etc/firmware/ROMv2_lm_patch_1_0_hdr.bin
 etc/firmware/ROMv2_lm_patch_1_1_hdr.bin
 etc/firmware/WIFI_RAM_CODE_6735
 etc/firmware/WMT_SOC.cfg
+
+# WV DRM
+vendor/lib/libwvdrm_L3.so
+vendor/lib/libwvm.so
+vendor/lib/libWVStreamControlAPI_L3.so
+vendor/lib/drm/libdrmwvmplugin.so
+vendor/lib/mediadrm/libwvdrmengine.so
