@@ -50,6 +50,14 @@ done
 (cat << EOF) >> $MAKEFILE
 endif
 
+ifeq (\$(WITH_GMS),true)
+
+PRODUCT_COPY_FILES += \\
+    vendor/wileyfox/porridge/proprietary/etc/permissions/com.google.widevine.software.drm.xml:system/etc/permissions/com.google.widevine.software.drm.xml \\
+    vendor/wileyfox/porridge/proprietary/framework/com.google.widevine.software.drm.jar:system/framework/com.google.widevine.software.drm.jar
+
+endif # WITH_GMS
+
 PRODUCT_COPY_FILES += \\
 EOF
 

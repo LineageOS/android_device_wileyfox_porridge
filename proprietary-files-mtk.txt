@@ -200,6 +200,8 @@ etc/firmware/WIFI_RAM_CODE_6735
 etc/firmware/WMT_SOC.cfg
 
 # WV DRM
+-etc/permissions/com.google.widevine.software.drm.xml
+-framework/com.google.widevine.software.drm.jar
 vendor/lib/libwvdrm_L3.so
 vendor/lib/libwvm.so
 vendor/lib/libWVStreamControlAPI_L3.so
