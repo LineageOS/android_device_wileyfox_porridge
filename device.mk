@@ -24,7 +24,8 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Init
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/init.target.rc:root/init.target.rc
+    $(LOCAL_PATH)/rootdir/init.target.rc:root/init.target.rc \
+    $(LOCAL_PATH)/rootdir/fstab.porridge:root/fstab.porridge
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -69,6 +70,14 @@ PRODUCT_COPY_FILES += \
 # Graphics
 MTK_GPU_VERSION := mali midgard r7p0
 
+# IO Scheduler
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.io.scheduler=bfq
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.heapgrowthlimit=128m \
+    dalvik.vm.heapminfree=6m \
+    dalvik.vm.heapstartsize=14m
 # Inherit sensible defaults
 $(call inherit-product-if-exists, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
