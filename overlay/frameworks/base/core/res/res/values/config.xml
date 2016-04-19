@@ -24,4 +24,7 @@
     <bool name="config_supportDoubleTapWake">true</bool>
 
     <string name="config_mms_user_agent">Wileyfox-Spark/1.0</string>
+
+    <!-- Hardware keys: 64 (volume rocker) -->
+    <integer name="config_deviceHardwareKeys">64</integer>
 </resources>
