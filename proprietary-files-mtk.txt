@@ -47,6 +47,7 @@ bin/fuelgauged
 bin/thermal_manager
 lib{,64}/libperfservicenative.so
 lib/libmtcloader.so
+lib/libfgauge.so
 lib{,64}/libmtklimiter.so
 
 # NVRAM
