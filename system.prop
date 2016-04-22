@@ -3,3 +3,12 @@ ro.telephony.default_network=9
 
 # Graphics
 ro.sf.lcd_density=320
+
+# memory trim
+ro.sys.fw.use_trim_settings=true
+ro.sys.fw.empty_app_percent=50
+ro.sys.fw.trim_empty_percent=100
+ro.sys.fw.trim_cache_percent=100
+ro.sys.fw.trim_enable_memory=1073741824
+
+ro.config.max_starting_bg=3
