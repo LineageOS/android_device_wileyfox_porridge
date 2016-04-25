@@ -24,7 +24,7 @@ PRODUCT_DEVICE := porridge
 PRODUCT_GMS_CLIENTID_BASE := android-wileyfox
 
 PRODUCT_MANUFACTURER := Wileyfox
-PRODUCT_MODEL := Spark
+PRODUCT_MODEL := Wileyfox Spark
 
 PRODUCT_BRAND := Wileyfox
 TARGET_VENDOR := wileyfox
