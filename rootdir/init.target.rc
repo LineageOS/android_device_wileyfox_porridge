@@ -4,6 +4,11 @@ on boot
     chown system radio /sys/devices/soc/11008000.i2c/i2c-1/1-0020/input/input6/wake_gesture
     chmod 664 /sys/devices/soc/11008000.i2c/i2c-1/1-0020/input/input6/wake_gesture
 
+    # Enable KSM
+    write /sys/kernel/mm/ksm/pages_to_scan 100
+    write /sys/kernel/mm/ksm/sleep_millisecs 500
+    write /sys/kernel/mm/ksm/run 1
+
     # Tune I/O
     write /sys/block/mmcblk0/queue/add_random 0
     write /sys/block/mmcblk0/queue/iosched/slice_idle 0
