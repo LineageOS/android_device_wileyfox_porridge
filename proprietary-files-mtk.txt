@@ -19,6 +19,7 @@ lib{,64}/mtk-ril.so
 etc/ecc_list.xml
 
 # Sensors
+bin/af7133d
 bin/akmd09911
 bin/akmd8963
 bin/akmd8975
