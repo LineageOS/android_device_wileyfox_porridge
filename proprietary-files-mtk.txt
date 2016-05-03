@@ -36,6 +36,7 @@ lib/libhwm.so
 lib{,64}/hw/sensors.mt6735.so
 
 # GPS
+-app/YGPS/YGPS.apk
 bin/mtk_agpsd
 bin/slpd
 bin/wifi2agps
