@@ -147,6 +147,7 @@ lib/libmhalImageCodec.so
 lib{,64}/libmtkcamera_client.so
 lib{,64}/libmtkjpeg.so
 lib{,64}/libn3d3a.so
+lib{,64}/libSonyIMX230PdafLibrary.so
 lib{,64}/hw/camera.mt6735.so
 
 # Media
