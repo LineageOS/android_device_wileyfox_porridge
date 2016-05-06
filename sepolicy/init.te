@@ -1,0 +1,1 @@
+allow init device:lnk_file create_file_perms;
