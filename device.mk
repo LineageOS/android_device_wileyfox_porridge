@@ -70,7 +70,7 @@ PRODUCT_PROPERTY_OVERRIDES += persist.radio.default.sim=0
 PRODUCT_PROPERTY_OVERRIDES += persist.radio.multisim.config=dsds
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/config/ecc_list.xml:system/etc/ecc_list.xml
+    $(LOCAL_PATH)/configs/ecc_list.xml:system/etc/ecc_list.xml
 
 # Graphics
 MTK_GPU_VERSION := mali midgard r7p0
