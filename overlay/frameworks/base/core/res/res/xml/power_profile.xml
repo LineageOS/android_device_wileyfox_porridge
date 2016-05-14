@@ -18,7 +18,6 @@
 -->
 
 <device name="Android">
-  <item name="none">0</item>
   <item name="screen.on">215</item>
   <item name="screen.full">375</item>
   <item name="bluetooth.active">35</item>
@@ -38,32 +37,24 @@
       <value>1</value>
   </array>
 
-  <!-- A list of heterogeneous CPU clusters, where the value for each cluster represents the
-       number of CPU cores for that cluster.
-
-       Ex:
-       <array name="cpu.clusters.cores">
-         <value>4</value> // cluster 0 has cpu0, cpu1, cpu2, cpu3
-         <value>2</value> // cluster 1 has cpu4, cpu5
-       </array> -->
-  <array name="cpu.clusters.cores">
-      <value>1</value> <!-- cluster 0 has cpu0 -->
+  <array name="cpu.speeds">
+      <value>299000</value>
+      <value>442000</value>
+      <value>598000</value>
+      <value>819000</value>
+      <value>1040000</value>
+      <value>1170000</value>
+      <value>1235000</value>
+      <value>1300000</value>
   </array>
-
-    <!-- Different CPU speeds for cluster 0 as reported in
-       /sys/devices/system/cpu/cpu0/cpufreq/stats/time_in_state.
-
-       There must be one of these for each cluster, labeled:
-       cpu.speeds.cluster0, cpu.speeds.cluster1, etc... -->
-  <array name="cpu.speeds.cluster0">
-      <value>400000</value> <!-- 400 MHz CPU speed -->
-  </array>
-
-  <!-- Current at each CPU speed for cluster 0, as per 'cpu.speeds.cluster0'.
-       Like cpu.speeds.cluster0, there must be one of these present for
-       each heterogeneous CPU cluster. -->
-  <array name="cpu.active.cluster0">
-      <value>100</value>  <!-- ~100mA -->
+  <array name="cpu.active">
+      <value>80</value>
+      <value>100</value>
+      <value>130</value>
+      <value>150</value>
+      <value>180</value>
+      <value>195</value>
+      <value>225</value>
   </array>
 
   <!-- Current when CPU is idle -->
