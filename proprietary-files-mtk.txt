@@ -32,7 +32,7 @@ bin/memsicd3416x
 bin/msensord
 bin/orientationd
 bin/s62xd
-lib/libhwm.so
+lib{,64}/libhwm.so
 lib{,64}/hw/sensors.mt6735.so
 
 # GPS
@@ -185,6 +185,9 @@ lib/libvp8dec_sa.ca7.so
 lib/libvp9dec_sa.ca7.so
 lib{,64}/hw/audio.primary.mt6735.so
 etc/audio_param/AudioParamOptions.xml
+
+# Meta Mode
+bin/meta_tst
 
 # Misc
 lib{,64}/hw/lights.mt6735.so
