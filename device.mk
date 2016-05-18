@@ -15,6 +15,8 @@
 
 $(call inherit-product-if-exists, vendor/wileyfox/porridge/porridge-vendor.mk)
 
+include $(LOCAL_PATH)/ProjectConfig.mk
+
 # Charger and USB
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.usb.vid=2970
@@ -88,6 +90,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapmaxfree=8m \
     dalvik.vm.heapstartsize=8m \
     dalvik.vm.heaptargetutilization=0.75
+
+# Versioning
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.mediatek.version.release=$(MTK_BUILD_VERNO) \
+    ro.mediatek.chip_ver=$(MTK_CHIP_VER)
 
 # Inherit the rest from mt6735-common
 $(call inherit-product, device/cyanogen/mt6735-common/mt6735.mk)
