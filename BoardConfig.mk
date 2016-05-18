@@ -37,7 +37,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE:=4386701312
 
 TARGET_INIT_VENDOR_LIB := libinit_porridge
 
-TARGET_TAP_TO_WAKE_NODE := /dev/wake_gesture
+TARGET_TAP_TO_WAKE_NODE := /sys/devices/soc/soc:touch/enable_gesture
 
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
