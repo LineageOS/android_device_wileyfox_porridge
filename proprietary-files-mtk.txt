@@ -17,6 +17,9 @@ lib{,64}/librilmtk.so
 lib64/libterservice.so
 lib{,64}/mtk-ril.so
 etc/ecc_list.xml
+etc/firmware/catcher_filter_1_lwg_n.bin
+etc/firmware/dsp_1_lwg_n.bin
+etc/firmware/modem_1_lwg_n.img
 
 # Sensors
 bin/af7133d
