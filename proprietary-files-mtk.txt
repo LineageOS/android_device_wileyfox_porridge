@@ -192,6 +192,12 @@ etc/audio_param/AudioParamOptions.xml
 # Meta Mode
 bin/meta_tst
 
+# Factory Mode
+bin/factory
+etc/factory.ini
+lib64/libminiui.so
+lib64/libmmfactoryutil.so
+
 # Misc
 lib{,64}/hw/lights.mt6735.so
 lib{,64}/hw/memtrack.mt6735.so
