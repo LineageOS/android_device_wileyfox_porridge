@@ -196,7 +196,6 @@ bin/meta_tst
 bin/factory
 etc/factory.ini
 lib64/libminiui.so
-lib64/libmmfactoryutil.so
 
 # Misc
 lib{,64}/hw/lights.mt6735.so
