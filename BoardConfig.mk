@@ -41,4 +41,6 @@ TARGET_TAP_TO_WAKE_NODE := /sys/devices/soc/soc:touch/enable_gesture
 
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
+USE_CONFIGURABLE_AUDIO_POLICY := 1
+
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
