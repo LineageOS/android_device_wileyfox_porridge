@@ -196,6 +196,8 @@ bin/meta_tst
 bin/factory
 etc/factory.ini
 lib64/libminiui.so
+lib64/libacdk.so
+res/sound/ringtone.wav
 
 # Misc
 lib{,64}/hw/lights.mt6735.so
