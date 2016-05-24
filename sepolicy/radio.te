@@ -1,0 +1,2 @@
+allow radio swver_prop:property_service set;
+
