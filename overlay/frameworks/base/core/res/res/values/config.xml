@@ -80,4 +80,10 @@
     <!-- Default color for notification LED is green. -->
     <color name="config_defaultNotificationColor">#ff00ff00</color>
 
+    <string name="config_useragentprofile_url" translatable="false">http://ua-profiles.cyngn.com/porridge/porridge-4cc1a6987d.rdf</string>
+
+    <string name="config_mms_user_agent">Wileyfox-Spark/1.0</string>
+    <string name="config_mms_user_agent_profile_url">http://ua-profiles.cyngn.com/porridge/porridge-4cc1a6987d.rdf</string>
+
+
 </resources>
