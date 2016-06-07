@@ -17,7 +17,8 @@ TARGET_BOARD_PLATFORM := mt6735
 
 DEVICE_PATH := device/wileyfox/porridge
 
-include $(DEVICE_PATH)/ProjectConfig.mk
+MTK_PROJECT_CONFIG ?= $(DEVICE_PATH)/ProjectConfig.mk
+include $(MTK_PROJECT_CONFIG)
 include device/cyanogen/mt6735-common/BoardConfigCommon.mk
 
 MTK_INTERNAL_CDEFS := $(foreach t,$(AUTO_ADD_GLOBAL_DEFINE_BY_NAME),$(if $(filter-out no NO none NONE false FALSE,$($(t))),-D$(t)))

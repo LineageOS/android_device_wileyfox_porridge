@@ -52,6 +52,9 @@ static void import_cmdline(char *name, int for_emulator)
     if (!strcmp(name,"cmv") && !strcmp(value,"pk2")) {
         model_variant = 2;
     }
+    if (!strcmp(name,"cmv") && !strcmp(value,"pk3")) {
+        model_variant = 3;
+    }
 }
 
 void vendor_load_properties()
@@ -59,6 +62,9 @@ void vendor_load_properties()
     import_kernel_cmdline(0, import_cmdline);
 
     switch (model_variant) {
+        case 3:
+            property_set("ro.product.model", "Wileyfox SparkX");
+            break;
         case 2:
             property_set("ro.product.model", "Wileyfox Spark+");
             break;

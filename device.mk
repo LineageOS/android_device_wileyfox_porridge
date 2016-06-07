@@ -13,7 +13,8 @@
 # limitations under the License.
 #
 
-$(call inherit-product-if-exists, vendor/wileyfox/porridge/porridge-vendor.mk)
+VENDOR_BLOBS ?= vendor/wileyfox/porridge/porridge-vendor.mk
+$(call inherit-product-if-exists, $(VENDOR_BLOBS))
 
 include $(LOCAL_PATH)/ProjectConfig.mk
 
