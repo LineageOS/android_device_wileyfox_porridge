@@ -63,10 +63,10 @@ void vendor_load_properties()
 
     switch (model_variant) {
         case 3:
-            property_set("ro.product.model", "Wileyfox SparkX");
+            property_set("ro.product.model", "Wileyfox Spark X");
             break;
         case 2:
-            property_set("ro.product.model", "Wileyfox Spark+");
+            property_set("ro.product.model", "Wileyfox Spark +");
             break;
         case 1:
         default:
