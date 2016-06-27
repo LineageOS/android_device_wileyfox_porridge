@@ -46,13 +46,13 @@ static void import_cmdline(char *name, int for_emulator)
     *value++ = 0;
     if (name_len == 0) return;
 
-    if (!strcmp(name,"cmv") && !strcmp(value,"pk1")) {
+    if (!strcmp(name,"androidboot.cmv") && !strcmp(value,"pk1")) {
         model_variant = 1;
     }
-    if (!strcmp(name,"cmv") && !strcmp(value,"pk2")) {
+    if (!strcmp(name,"androidboot.cmv") && !strcmp(value,"pk2")) {
         model_variant = 2;
     }
-    if (!strcmp(name,"cmv") && !strcmp(value,"pk3")) {
+    if (!strcmp(name,"androidboot.cmv") && !strcmp(value,"pk3")) {
         model_variant = 3;
     }
 }
