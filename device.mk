@@ -16,7 +16,8 @@
 VENDOR_BLOBS ?= vendor/wileyfox/porridge/porridge-vendor.mk
 $(call inherit-product-if-exists, $(VENDOR_BLOBS))
 
-include $(LOCAL_PATH)/ProjectConfig.mk
+MTK_PROJECT_CONFIG ?= device/wileyfox/porridge/ProjectConfig.mk
+include $(MTK_PROJECT_CONFIG)
 
 # Charger and USB
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
