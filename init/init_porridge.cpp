@@ -71,6 +71,7 @@ void vendor_load_properties()
         case 1:
         default:
             property_set("ro.product.model", "Wileyfox Spark");
+            property_set("ro.media.maxmem", "1073741824");
             break;
     }
 }
