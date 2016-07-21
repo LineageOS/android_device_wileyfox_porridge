@@ -86,8 +86,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     sys.io.scheduler=bfq
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.heapgrowthlimit=128m \
-    dalvik.vm.heapsize=174m \
     dalvik.vm.heapminfree=512k \
     dalvik.vm.heapmaxfree=8m \
     dalvik.vm.heapstartsize=8m \

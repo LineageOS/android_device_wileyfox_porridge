@@ -64,13 +64,19 @@ void vendor_load_properties()
     switch (model_variant) {
         case 3:
             property_set("ro.product.model", "Wileyfox Spark X");
+            property_set("dalvik.vm.heapgrowthlimit", "192m");
+            property_set("dalvik.vm.heapsize", "512m");
             break;
         case 2:
             property_set("ro.product.model", "Wileyfox Spark +");
+            property_set("dalvik.vm.heapgrowthlimit", "192m");
+            property_set("dalvik.vm.heapsize", "512m");
             break;
         case 1:
         default:
             property_set("ro.product.model", "Wileyfox Spark");
+            property_set("dalvik.vm.heapgrowthlimit", "128m");
+            property_set("dalvik.vm.heapsize", "174m");
             property_set("ro.media.maxmem", "1073741824");
             break;
     }
