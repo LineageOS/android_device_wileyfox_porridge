@@ -1,0 +1,10 @@
+[
+  {
+    "repository": "android_device_cyanogen_mt6735-common",
+    "target_path": "device/cyanogen/mt6735-common"
+  },
+  {
+    "repository": "android_kernel_cyanogen_mt6735",
+    "target_path": "kernel/cyanogen/mt6735"
+  }
+]
