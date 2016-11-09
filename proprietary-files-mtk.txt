@@ -209,10 +209,10 @@ lib{,64}/hw/memtrack.mt6735.so
 
 # MTKLogger
 -app/MTKLogger/MTKLogger.apk
-bin/emdlogger1
-bin/mdlogger
-bin/mobile_log_d
-bin/netdiag
+-bin/emdlogger1
+-bin/mdlogger
+-bin/mobile_log_d
+-bin/netdiag
 
 # Wifi
 etc/firmware/ROMv2_lm_patch_1_0_hdr.bin
